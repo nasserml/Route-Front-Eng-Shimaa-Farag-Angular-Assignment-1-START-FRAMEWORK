@@ -1,0 +1,38 @@
+<div class="contact">
+    <div class="contact-content">
+
+        <div class="title">
+            <h2>conatct section</h2>
+            <div class="line-star-line">
+                <div class="line"></div>
+                <i class="fa-solid fa-star"></i>
+                <div class="line"></div>
+            </div>
+
+
+        </div>
+
+        <div class="conatct-form">
+            <div class="container">
+                <form action="">
+
+                    <label [class.top-label-0]=" userLabel? true: false"  for="userName">userName : </label>
+                    <input  type="text" placeholder="userName" id="userName" name="userName" class="input" (input)="userNameLapbel()">
+
+                    <label [class.top-label-0]="userAgeLabel?true:false"  for="userAge">userAge : </label>
+                    <input type="text" placeholder="userAge" id="userAge" name="userAge" class="input" (input)="setUserAgeLapbel()">
+
+                    <label  [class.top-label-0]="uesrEmailLabel?true:false" for="uesrEmail">uesrEmail : </label>
+                    <input type="email" placeholder="uesrEmail" id="uesrEmail" name="uesrEmail" class="input" (input)="setUserEmailLapbel()">
+
+                    <label [class.top-label-0]="userPasswordLabel? true: false" for="userPassword">userPassword : </label>
+                    <input type="password" placeholder="userPassword" id="userPassword" name="userPassword" class="input" (input)="setUserPasswordLapbel()">
+
+                    <button type="button" class="send-message-btn">send Message</button>
+
+                </form>
+            </div>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<nav [ngClass]="{'padding-y-8px': isScrolled}" class="navbar-tw">
+    <div class="container">
+        <a (click)="setActiveLink('/')" routerLink="/" class="logo">START FRAMEWORK</a>
+        <button (click)="toggleNav()" data-collapse-toggle="navbar-default" type="button" class="navbar-toggler-tw" aria-controls="navbar-default" aria-expanded="false">
+            <span class="navbar-toggler-icon-tw"></span>
+        </button>
+
+        <div [ngClass]="{' height-full':isNavOpen, ' height-zero':!isNavOpen}" class="nav-links-tw" id="navbar-default">
+            <ul class="ul-links-tw">
+                <li class="nav-item-tw">
+                    <a routerLink="/about" (click)="setActiveLink('/about')" [ngClass]="{'clicked-active': activeLink === '/about'}" class="nav-link-tw ">ABOUT</a>
+                </li>
+                <li class="nav-item-tw">
+                    <a (click)="setActiveLink('/portfolio')" [ngClass]="{'clicked-active': activeLink === '/portfolio'}" routerLink="/portfolio" class="nav-link-tw">PORTFOLIO</a>
+                </li>
+                <li (click)="setActiveLink('/contact')" [ngClass]="{'clicked-active': activeLink==='/contact'}" class="nav-item-tw">
+                    <a routerLink="/contact" class="nav-link-tw">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

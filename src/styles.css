@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+}
+
+@layer components{
+    .title{
+        @apply w-full text-center
+    }
+    .title h2{
+        @apply text-white text-40px leading-48px font-bold pt-6 mb-4 uppercase
+    }
+    .line-star-line {
+        @apply flex mb-4 items-center justify-center
+    }
+    .line-star-line .line{
+        @apply h-1 w-20 mr-4 bg-white
+    }
+    .line-star-line i{
+        @apply font-black text-base block mr-4
+    }
+} 

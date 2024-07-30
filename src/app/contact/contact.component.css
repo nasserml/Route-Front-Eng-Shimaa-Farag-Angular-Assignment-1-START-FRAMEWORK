@@ -1,0 +1,46 @@
+@tailwind components;
+
+@layer components {
+    .contact {
+        @apply bg-white min-h-lvh mb-6  mt-106px
+    }
+
+    .contact-content {
+        @apply pt-4
+    }
+
+    .contact .title h2{
+        @apply text-rgb(44,62,80)
+    }
+
+    .line-star-line i{
+        @apply text-rgb(44,62,80)
+    }
+
+    .line-star-line .line {
+        @apply bg-rgb(44,62,80)
+    }
+
+    .conatct-form form{
+        @apply w-7/12 mt-12 p-4 mx-auto 
+    }
+
+    .conatct-form form label{
+        @apply inline-block relative top-10 mb-[7px] text-#1ABC9C duration-0.6s transition-top 
+    }
+
+    .conatct-form form .input{
+        @apply px-3 py-4 outline-none border-0 border-b border-#dee2e6 border-solid relative block w-full rounded-md transition-shadow transition-colors ease-in-out duration-150
+    }
+
+    .conatct-form .send-message-btn {
+        @apply mt-6 px-3 py-6px bg-#1ABC9C cursor-pointer text-white me-auto block rounded-md 
+    }
+
+    .conatct-form form label.top-label-0 {
+        @apply top-0
+    }
+
+    
+}
+

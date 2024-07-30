@@ -1,0 +1,47 @@
+@tailwind components;
+
+@layer components{
+    .portfolio{
+        @apply mb-6 bg-white min-h-lvh mt-106px
+        
+    }
+
+    .portfolio-content{
+        @apply pt-6 
+    }
+
+    .portfolio-content .title h2{
+        @apply text-rgb(44,62,80) uppercase 
+    }
+
+   
+
+    .line-star-line i {
+        @apply text-rgb(44,62,80)
+    }
+
+    .line-star-line .line{
+        @apply bg-rgb(44,62,80)
+    }
+
+    .container .row-tw {
+        @apply grid gap-12 lg:grid-cols-3 md:grid-cols-2 
+    }
+
+    .item-image .inner {
+        @apply rounded-lg relative overflow-hidden 
+
+    }
+
+    .item-image img{
+        @apply w-full rounded-lg 
+    }
+
+    .item-image .overlay {
+        @apply bg-rgba(26,188,156,0.9) cursor-pointer absolute top-0 w-full h-full left-0  flex justify-center items-center text-rgb(33,37,41) opacity-0 transition-opacity duration-0.6s ease-in hover:opacity-100
+    }
+
+    .overlay i{
+        @apply text-white text-8xl
+    }
+}

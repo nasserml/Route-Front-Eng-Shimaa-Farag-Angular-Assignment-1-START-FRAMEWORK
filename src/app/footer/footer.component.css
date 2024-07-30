@@ -1,0 +1,54 @@
+@tailwind components;
+
+@layer components{
+
+    .footer {
+        @apply bg-#2C3E50 
+    }
+    .copyright {
+        @apply bg-#1a252f
+    }
+
+    .footer p, .copyright p { 
+        @apply text-base font-normal text-white
+    }
+    
+    .footer h3{
+        @apply text-28px leading-34px leading-34px font-medium text-white
+    }
+
+    .footer{
+        @apply text-center text-white p-10 
+    }
+    .footer-info {
+        @apply m-6 screen-576px:flex screen-576px:flex-row screen-576px:flex-wrap 
+    }
+    .location , .web , .freelancer {
+        @apply screen-576px:flex screen-576px:grow screen-576px:shrink-0 screen-576px:basis-0 screen-576px:mb-0 screen-576px:rounded-md
+        relative flex-col flex 
+    }
+
+    .footer-info .inner {
+        @apply text-center p-4 grow shrink basis-auto 
+    }
+    .inner h3{
+        @apply pt-5 mb-2 
+    }
+
+    .inner p{
+        @apply mb-4
+    }
+
+    .icons i {
+        @apply border border-white border-solid rounded-full p-10px text-base font-normal leading-4 text-white mx-1 
+    }
+    .icons i:nth-child(4) {
+        @apply font-black
+    }
+    .copyright {
+        @apply p-10px 
+    }
+    .copyright p{
+        @apply pt-10px mb-4 text-center
+    }
+}

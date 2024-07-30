@@ -1,0 +1,30 @@
+@tailwind components;
+
+@layer components {
+    .home {
+        @apply  min-h-lvh bg-#1ABC9C  text-white flex items-center justify-center flex-wrap
+    }
+    .home-text-image {
+        @apply text-center flex justify-center items-center flex-wrap
+    }
+
+    .home-text-image img{
+        @apply mb-4 align-middle text-center block
+    }
+
+    .title{
+        @apply w-full
+    }
+    .title h2{
+        @apply text-white text-40px leading-48px font-bold pt-6 mb-4
+    }
+    .line-star-line {
+        @apply flex mb-4 items-center justify-center
+    }
+    .line-star-line .line{
+        @apply h-1 w-20 mr-4 bg-white
+    }
+    .line-star-line i{
+        @apply font-black text-base block mr-4
+    }
+}

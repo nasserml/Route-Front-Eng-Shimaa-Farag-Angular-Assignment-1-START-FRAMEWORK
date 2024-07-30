@@ -1,0 +1,59 @@
+@tailwind components;
+
+ 
+ @layer components {
+
+    .navbar-tw {
+        @apply py-6 bg-#2C3E50 fixed top-0 right-0 left-0 z-50 flex screen-992px:flex-nowrap flex-wrap justify-start items-center transition-padding duration-0.6s ease-in
+    }
+
+    .navbar-tw > .container {
+        @apply flex items-center screen-992px:flex-nowrap justify-between flex-wrap
+    }
+
+    .navbar-tw .logo {
+        @apply py-5px mr-4 text-32px leading-48px font-bold text-white
+    }
+
+    .navbar-tw .navbar-toggler-tw{
+        @apply items-start bg-transparent border-1.5px border-rgba(0,0,0,0.15) border-solid rounded-md text-rgba(0,0,0,0.65) cursor-pointer block text-xl leading-5 font-normal px-3 py-1 outline-0 shadow-none screen-992px:hidden 
+    }
+
+    .navbar-toggler-tw .navbar-toggler-icon-tw {
+        @apply inline-block w-30px h-30px align-middle bg-navbar-toggler-icon-tw bg-no-repeat bg-center bg-100%
+    }
+
+    .navbar-tw .nav-links-tw {
+        @apply screen-992px:flex flex-grow items-center screen-992px:basis-auto  basis-full transition-height duration-0.6s  ease-in-out overflow-hidden
+    }
+
+    .nav-links-tw .ul-links-tw {
+        @apply flex screen-992px:flex-row pl-0 list-none ml-auto mb-2 screen-992px:mb-0 flex-col
+    }
+
+    .nav-links-tw .nav-item-tw {
+        @apply mr-4 
+    }
+
+    .nav-item-tw .nav-link-tw {
+        @apply w-fit p-2 text-base font-bold text-white
+        transition-colors duration-150 ease-in-out block rounded-lg 
+    }
+
+    .clicked-active{
+        @apply bg-#1ABC9C rounded-lg 
+    }
+
+    .padding-y-8px {
+        @apply py-2 
+    }
+
+    .height-full {
+        @apply h-[128px] screen-992px:h-full
+    }
+
+    .height-zero {
+        @apply h-0 screen-992px:h-full
+    }
+
+ }
