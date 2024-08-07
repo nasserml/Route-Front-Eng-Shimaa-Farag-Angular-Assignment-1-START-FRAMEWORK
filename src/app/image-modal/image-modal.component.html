@@ -1,0 +1,12 @@
+
+
+ @if( open) {
+        <div  class="fixed top-0 left-0 w-full h-full bg-[rgb(13,110,253)] bg-opacity-25 z-50 flex justify-center items-center " (click)="closeModal()">
+            <div class="overflow-hidden rounded-lg image w-[600px] z-[100]">
+                <img [src]="imgSrc" class="w-full rounded-lg" alt="" (click)="stayOpen($event)">
+        
+            </div>
+        
+        </div>
+    
+    }
